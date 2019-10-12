@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mendeleiev</title>
+    <style>
+
+        body {
+            background: #F1FBFD;
+        }
+        .picture {
+            width: 55%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20vw;
+        }
+
+        .picture img{
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            height: auto;
+            width: auto;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-auto-rows: 1fr;
+            margin-bottom: 2vw;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-auto-rows: 1fr;
+        }
+        
+        .grid2 > .item {
+            background: orange;
+        }
+
+        .grid2 > .item:nth-child(n+2):nth-child(n+18){
+            background:#4197bf;
+        }
+
+        .item {
+            background:pink;
+            margin : 1px;
+        }
+
+        .blank1 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 2/18;
+        }
+
+        .blank2 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 4/13;
+        }
+
+        .blank3 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 4/13;
+        }
+
+        .blank4 {
+            background: 	#F1FBFD;
+            border: none;
+            grid-column: 1/4;
+        }
+
+        .blank5 {
+            background:	#F1FBFD;
+            border: none;
+            grid-column: 1/4;
+        }
+
+        .num {
+            text-align: right;
+            font-size: 1.3vw;
+            color: #20132b;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .element {
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.5vw;
+            color: #20132b;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .weight {
+            font-size: 1.3vw;
+            color: #20132b;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .blue    {
+            background-color: #4197bf;
+        }
+
+        .orange {
+            background: orange;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="picture">
+            <img src="chemistry.jpg" alt="chemistry">
+    </div>
+
+    <div class="container">
+        <div class="grid">
+            <div class="item"> <div class="num">1</div> <div class="element">H</div> <div class="weight">1</div> </div>
+            <div class="blank1"></div>
+            <div class="item"> <div class="num">2</div> <div class="element">He</div> <div class="weight">4</div> </div>
+            <div class="item"> <div class="num">3</div> <div class="element">Li</div> <div class="weight">6.9</div> </div>
+            <div class="item"> <div class="num">4</div> <div class="element">Be</div> <div class="weight">9</div> </div>
+            <div class="blank2"></div>
+            <div class="item"> <div class="num">5</div> <div class="element">B</div> <div class="weight">10.8</div> </div>
+            <div class="item"> <div class="num">6</div> <div class="element">C</div> <div class="weight">12</div> </div>
+            <div class="item"> <div class="num">7</div> <div class="element">N</div> <div class="weight">14</div> </div>
+            <div class="item"> <div class="num">8</div> <div class="element">O</div> <div class="weight">15.9</div> </div>
+            <div class="item"> <div class="num">9</div> <div class="element">F</div> <div class="weight">18.9</div> </div>
+            <div class="item"> <div class="num">10</div> <div class="element">Ne</div> <div class="weight">20.1</div> </div>
+            <div class="item"> <div class="num">11</div> <div class="element">Na</div> <div class="weight">22.9</div> </div>
+            <div class="item"> <div class="num">12</div> <div class="element">Mg</div> <div class="weight">24.3</div> </div>
+            <div class="blank3"></div>
+            <div class="item"> <div class="num">13</div> <div class="element">Al</div> <div class="weight">26.9</div> </div>
+            <div class="item"> <div class="num">14</div> <div class="element">Si</div> <div class="weight">28</div> </div>
+            <div class="item"> <div class="num">15</div> <div class="element">P</div> <div class="weight">30.9</div> </div>
+            <div class="item"> <div class="num">16</div> <div class="element">S</div> <div class="weight">32</div> </div>
+            <div class="item"> <div class="num">17</div> <div class="element">Cl</div> <div class="weight">35.4</div> </div>
+            <div class="item"> <div class="num">18</div> <div class="element">Ar</div> <div class="weight">39.9</div> </div>
+            <div class="item"> <div class="num">19</div> <div class="element">K</div> <div class="weight">39</div> </div>
+            <div class="item"> <div class="num">20</div> <div class="element">Ca</div> <div class="weight">40</div> </div>
+            <div class="item"> <div class="num">21</div> <div class="element">Sc</div> <div class="weight">44.9</div> </div>
+            <div class="item"> <div class="num">22</div> <div class="element">Ti</div> <div class="weight">47.8</div> </div>
+            <div class="item"> <div class="num">23</div> <div class="element">V</div> <div class="weight">50.9</div> </div>
+            <div class="item"> <div class="num">24</div> <div class="element">Cr</div> <div class="weight">51.9</div> </div>
+            <div class="item"> <div class="num">25</div> <div class="element">Mn</div> <div class="weight">54.9</div> </div>
+            <div class="item"> <div class="num">26</div> <div class="element">Fe</div> <div class="weight">55.8</div> </div>
+            <div class="item"> <div class="num">27</div> <div class="element">Co</div> <div class="weight">58.9</div> </div>
+            <div class="item"> <div class="num">28</div> <div class="element">Ni</div> <div class="weight">58.6</div> </div>
+            <div class="item"> <div class="num">29</div> <div class="element">Cu</div> <div class="weight">63.5</div> </div>
+            <div class="item"> <div class="num">30</div> <div class="element">Zn</div> <div class="weight">65.3</div> </div>
+            <div class="item"> <div class="num">31</div> <div class="element">Ga</div> <div class="weight">69.7</div> </div>
+            <div class="item"> <div class="num">32</div> <div class="element">Ge</div> <div class="weight">72.6</div> </div>
+            <div class="item"> <div class="num">33</div> <div class="element">As</div> <div class="weight">74.9</div> </div>
+            <div class="item"> <div class="num">34</div> <div class="element">Se</div> <div class="weight">78.9</div> </div>
+            <div class="item"> <div class="num">35</div> <div class="element">Br</div> <div class="weight">79.9</div> </div>
+            <div class="item"> <div class="num">36</div> <div class="element">Kr</div> <div class="weight">83.8</div> </div>
+            <div class="item"> <div class="num">37</div> <div class="element">Rb</div> <div class="weight">85.4</div> </div>
+            <div class="item"> <div class="num">38</div> <div class="element">Sr</div> <div class="weight">87.6</div> </div>
+            <div class="item"> <div class="num">39</div> <div class="element">Y</div> <div class="weight">88.9</div> </div>
+            <div class="item"> <div class="num">40</div> <div class="element">Zr</div> <div class="weight">91.2</div> </div>
+            <div class="item"> <div class="num">41</div> <div class="element">Nb</div> <div class="weight">92.9</div> </div>
+            <div class="item"> <div class="num">42</div> <div class="element">Mo</div> <div class="weight">95.9</div> </div>
+            <div class="item"> <div class="num">43</div> <div class="element">Tc</div> <div class="weight">98</div> </div>
+            <div class="item"> <div class="num">44</div> <div class="element">Ru</div> <div class="weight">101</div> </div>
+            <div class="item"> <div class="num">45</div> <div class="element">Rh</div> <div class="weight">102.9</div> </div>
+            <div class="item"> <div class="num">46</div> <div class="element">Pd</div> <div class="weight">106.4</div> </div>
+            <div class="item"> <div class="num">47</div> <div class="element">Ag</div> <div class="weight">107.8</div> </div>
+            <div class="item"> <div class="num">48</div> <div class="element">Cd</div> <div class="weight">112</div> </div>
+            <div class="item"> <div class="num">49</div> <div class="element">In</div> <div class="weight">114</div> </div>
+            <div class="item"> <div class="num">50</div> <div class="element">Sn</div> <div class="weight">118</div> </div>
+            <div class="item"> <div class="num">51</div> <div class="element">Sb</div> <div class="weight">121.7</div> </div>
+            <div class="item"> <div class="num">52</div> <div class="element">Te</div> <div class="weight">127.6</div> </div>
+            <div class="item"> <div class="num">53</div> <div class="element">I</div> <div class="weight">126.9</div> </div>
+            <div class="item"> <div class="num">54</div> <div class="element">Xe</div> <div class="weight">131.2</div> </div>
+            <div class="item"> <div class="num">55</div> <div class="element">Cs</div> <div class="weight">132.9</div> </div>
+            <div class="item"> <div class="num">56</div> <div class="element">Ba</div> <div class="weight">137.3</div> </div>
+            <div class="item orange"> <div class="num">57-71</div> </div>
+            <div class="item"> <div class="num">72</div> <div class="element">Hf</div> <div class="weight">178.4</div> </div>
+            <div class="item"> <div class="num">73</div> <div class="element">Ta</div> <div class="weight">180.9</div> </div>
+            <div class="item"> <div class="num">74</div> <div class="element">W</div> <div class="weight">183.8</div> </div>
+            <div class="item"> <div class="num">75</div> <div class="element">Re</div> <div class="weight">186.2</div> </div>
+            <div class="item"> <div class="num">76</div> <div class="element">Os</div> <div class="weight">190.2</div> </div>
+            <div class="item"> <div class="num">77</div> <div class="element">Ir</div> <div class="weight">192.2</div> </div>
+            <div class="item"> <div class="num">78</div> <div class="element">Pt</div> <div class="weight">195</div> </div>
+            <div class="item"> <div class="num">79</div> <div class="element">Au</div> <div class="weight">196.9</div> </div>
+            <div class="item"> <div class="num">80</div> <div class="element">Hg</div> <div class="weight">200.5</div> </div>
+            <div class="item"> <div class="num">81</div> <div class="element">Tl</div> <div class="weight">204.3</div> </div>
+            <div class="item"> <div class="num">82</div> <div class="element">Pb</div> <div class="weight">207.2</div> </div>
+            <div class="item"> <div class="num">83</div> <div class="element">Bi</div> <div class="weight">208.9</div> </div>
+            <div class="item"> <div class="num">84</div> <div class="element">Po</div> <div class="weight">209</div> </div>
+            <div class="item"> <div class="num">85</div> <div class="element">At</div> <div class="weight">210</div> </div>
+            <div class="item"> <div class="num">86</div> <div class="element">Rn</div> <div class="weight">222</div> </div>
+            <div class="item"> <div class="num">87</div> <div class="element">Fr</div> <div class="weight">223</div> </div>
+            <div class="item"> <div class="num">88</div> <div class="element">Ra</div> <div class="weight">226</div> </div>
+            <div class="item blue"> <div class="num">89-103</div> </div>
+            <div class="item"> <div class="num">104</div> <div class="element">Rf</div> <div class="weight">267</div> </div>
+            <div class="item"> <div class="num">105</div> <div class="element">Db</div> <div class="weight">268</div> </div>
+            <div class="item"> <div class="num">106</div> <div class="element">Sg</div> <div class="weight">269</div> </div>
+            <div class="item"> <div class="num">107</div> <div class="element">Bh</div> <div class="weight">270</div> </div>
+            <div class="item"> <div class="num">108</div> <div class="element">Hs</div> <div class="weight">270</div> </div>
+            <div class="item"> <div class="num">109</div> <div class="element">Mt</div> <div class="weight">278</div> </div>
+            <div class="item"> <div class="num">110</div> <div class="element">Rf</div> <div class="weight">281</div> </div>
+            <div class="item"> <div class="num">111</div> <div class="element">Ds</div> <div class="weight">282</div> </div>
+            <div class="item"> <div class="num">112</div> <div class="element">Rg</div> <div class="weight">285</div> </div>
+            <div class="item"> <div class="num">113</div> <div class="element">Cn</div> <div class="weight">286</div> </div>
+            <div class="item"> <div class="num">114</div> <div class="element">Nh</div> <div class="weight">289</div> </div>
+            <div class="item"> <div class="num">115</div> <div class="element">Fl</div> <div class="weight">290</div> </div>
+            <div class="item"> <div class="num">116</div> <div class="element">Mc</div> <div class="weight">293</div> </div>
+            <div class="item"> <div class="num">117</div> <div class="element">Lv</div> <div class="weight">294</div> </div>
+            <div class="item"> <div class="num">118</div> <div class="element">Ts</div> <div class="weight">294</div> </div>
+        </div>
+
+        <div class="grid2">
+            <div class="blank4"> </div>
+                <div class="item"> <div class="num">57</div> <div class="element">La</div> <div class="weight">138.9</div> </div>
+                <div class="item"> <div class="num">58</div> <div class="element">Ce</div> <div class="weight">140.1</div> </div>
+                <div class="item"> <div class="num">59</div> <div class="element">Pr</div> <div class="weight">140.9</div> </div>
+                <div class="item"> <div class="num">60</div> <div class="element">Nd</div> <div class="weight">144.2</div> </div>
+                <div class="item"> <div class="num">61</div> <div class="element">Pm</div> <div class="weight">145</div> </div>
+                <div class="item"> <div class="num">62</div> <div class="element">Sm</div> <div class="weight">150.3</div> </div>
+                <div class="item"> <div class="num">63</div> <div class="element">Eu</div> <div class="weight">151.9</div> </div>
+                <div class="item"> <div class="num">64</div> <div class="element">Gd</div> <div class="weight">157.2</div> </div>
+                <div class="item"> <div class="num">65</div> <div class="element">Tb</div> <div class="weight">158.9</div> </div>
+                <div class="item"> <div class="num">66</div> <div class="element">Dy</div> <div class="weight">162.5</div> </div>
+                <div class="item"> <div class="num">67</div> <div class="element">Ho</div> <div class="weight">164.9</div> </div>
+                <div class="item"> <div class="num">68</div> <div class="element">Er</div> <div class="weight">167.2</div> </div>
+                <div class="item"> <div class="num">69</div> <div class="element">Tm</div> <div class="weight">168.9</div> </div>
+                <div class="item"> <div class="num">70</div> <div class="element">Yb</div> <div class="weight">173</div> </div>
+                <div class="item"> <div class="num">71</div> <div class="element">Lu</div> <div class="weight">174.9</div> </div>
+            <div class="blank5"> </div>
+                <div class="item"> <div class="num">88</div> <div class="element">Ac</div> <div class="weight">226</div> </div>
+                <div class="item"> <div class="num">89</div> <div class="element">Th</div> <div class="weight">227</div> </div>
+                <div class="item"> <div class="num">90</div> <div class="element">Pa</div> <div class="weight">232</div> </div>
+                <div class="item"> <div class="num">91</div> <div class="element">U</div> <div class="weight">231</div> </div>
+                <div class="item"> <div class="num">92</div> <div class="element">Np</div> <div class="weight">238</div> </div>
+                <div class="item"> <div class="num">93</div> <div class="element">Pu</div> <div class="weight">237</div> </div>
+                <div class="item"> <div class="num">94</div> <div class="element">Am</div> <div class="weight">244</div> </div>
+                <div class="item"> <div class="num">95</div> <div class="element">Cm</div> <div class="weight">243</div> </div>
+                <div class="item"> <div class="num">96</div> <div class="element">Bk</div> <div class="weight">247</div> </div>
+                <div class="item"> <div class="num">97</div> <div class="element">Cf</div> <div class="weight">247</div> </div>
+                <div class="item"> <div class="num">98</div> <div class="element">Es</div> <div class="weight">251</div> </div>
+                <div class="item"> <div class="num">99</div> <div class="element">Fm</div> <div class="weight">252</div> </div>
+                <div class="item"> <div class="num">100</div> <div class="element">Md</div> <div class="weight">257</div> </div>
+                <div class="item"> <div class="num">101</div> <div class="element">No</div> <div class="weight">258</div> </div>
+                <div class="item"> <div class="num">102</div> <div class="element">Lr</div> <div class="weight">259</div> </div>
+        </div>
+    </div>
+</body>
+
+</html>
