@@ -1,0 +1,110 @@
+
+        body {
+            background: #F1FBFD;
+        }
+        .picture {
+            width: 55%;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20vw;
+        }
+
+        .picture img{
+            align-items: center;
+            width: 100%;
+            height: auto;
+        }
+
+        .container {
+            height: auto;
+            width: auto;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 50px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-auto-rows: 1fr;
+            margin-bottom: 2vw;
+        }
+
+        .grid2 {
+            display: grid;
+            grid-template-columns: repeat(18, 1fr);
+            grid-auto-rows: 1fr;
+        }
+        
+        .grid2 > .item {
+            background: orange;
+        }
+
+        .grid2 > .item:nth-child(n+2):nth-child(n+18){
+            background:#4197bf;
+        }
+
+        .item {
+            background:pink;
+            margin : 1px;
+        }
+
+        .blank1 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 2/18;
+        }
+
+        .blank2 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 4/13;
+        }
+
+        .blank3 {
+            background: #F1FBFD;
+            border: none;
+            grid-column: 4/13;
+        }
+
+        .blank4 {
+            background: 	#F1FBFD;
+            border: none;
+            grid-column: 1/4;
+        }
+
+        .blank5 {
+            background:	#F1FBFD;
+            border: none;
+            grid-column: 1/4;
+        }
+
+        .num {
+            text-align: right;
+            font-size: 1.3vw;
+            color: #20132b;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .element {
+            font-weight: bold;
+            text-align: center;
+            font-size: 2.5vw;
+            color: #20132b;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .weight {
+            font-size: 1.3vw;
+            color: #20132b;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .blue    {
+            background-color: #4197bf;
+        }
+
+        .orange {
+            background: orange;
+        }

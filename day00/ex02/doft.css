@@ -2,27 +2,71 @@ body {
     background: #505050;
 }
 
-.dayOfThe42 {
+.box {
     background: #909090;
-    width: 80vw;
-    height: auto;
+    border-radius: 10px;
+    -moz-box-shadow: 10px 10px 5px #222;
+    -webkit-box-shadow: 10px 10px 5px #222;
+    box-shadow: 10px 10px 5px #222;
+}
+
+.day_box {
+    width: 90vw;
+    height: 10vw;;
     margin-left: auto;
     margin-right: auto;
     margin-top: 5vw;
-    border-radius: 10px;
+    margin-bottom: 1vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
 }
 
-.dayOfThe42 img{
+.images {
+    display: inline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.day_of_the_42 {
     margin: 1vw;
-    align-items: center;
-    width: 30%;
+    width: 30vw;
     height: auto;
 }
 
+.loupe {
+    position: relative;
+    left: 35vw;
+    top: 1.5vw;
+    width: 20vw;
+    height: auto;
+}
+
+.img_top_end {
+    position: absolute;
+    right: 5px;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-right: 0.5vw;
+}
+
+.img_top_end img{
+    left: 60vw;
+    width: 2vw;
+    display: block;
+}
+
+.reload {
+    padding-bottom: 4.5vw;
+}
+
 .middle {
-    width: 50vw;
-    height: 45vw;
-    display: inline;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1vw;
 }
 
@@ -30,8 +74,8 @@ body {
     background: #909090;
     width: 60vw;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 2vw;
+    margin-right: 2vw;
     border-radius: 10px;
     padding: 0.5vw;
 }
@@ -43,8 +87,101 @@ body {
     margin-right: auto;
 }
 
-.block {
-    background: #909090;
+.menu {
+    width: 8vw;
+    height : 24vw;
+    padding-top: 0.5vw;
+}
+
+.menu img {
+    width: 4vw;
+    display: block;
+    margin : auto;
+}
+
+.brick {
+    border:solid;
+    margin-left: 6.8%;
+    margin-top: 0.41vw;
+    border-width: 0px;
+    width: 83.9%;
+    height: 16.5%;
+    background-image: url(./resources/brick.jpg);
+    background-repeat: repeat;
+    background-size: 26.5% 47%;
+}
+
+.border {
+    border: 4px red solid;
+    border-radius: 5px;
+}
+
+.padding_1 {
+    padding-top: 0.7vw;
+    padding-bottom: 0.7vw;
+}
+
+.input_box {
+    background:	#82FF8E;
+    width: 25vw;
+    height: 10vw;
+    position: relative;
+    left: 3vw;
+    top: -7vw;
+    padding-top: 0.2vw;
+    padding-left : 1vw;
+    display: inline-block;
+}
+
+.p_group{
+    font-size: 0.8vw;
+    margin: 0vw;
+    padding: 0vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.big {
+    font-size: 1.2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.input_block {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.shadow_text {
+    text-shadow: 8px 8px 6px #ff0000;
+}
+
+input {
+    width: 14vw;
+}
+
+button {
+    margin-left : 1vw;
+    display: block;
+    width: 5vw;
+    font-size: 0.8vw;
+}
+
+.chaise    {
+    border: solid;
+    border-width: 10px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 17.8%;
+    margin-top: 17.8vw;
+    width: 7vw;
+    height: 12vw;
+}
+.mac    {
+    border: solid;
+    border-width: 10px;
+    position: fixed;
+    z-index: 1;
+    margin-left: 42.2%;
+    margin-top: 17.5vw;
     width: 10vw;
-    height : 30vw;
+    height: 6.6vw;
 }
